@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(11, 26, 51);
+  color: white;
+}
+
+.custom-yellow-shadow {
+  box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+.border {
+  border: 1px solid yellow;
+}
+
+/* Define keyframes for the animation */
+@keyframes superman {
+  0% {
+    border-color: blue;
+    transform: translateY(0);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+
+  25% {
+    border-color: rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+
+  50% {
+    border-color: rgb(12, 12, 199);
+    transform: translateY(10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+
+  75% {
+    border-color: rgb(130, 217, 160);
+    box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+  }
+
+  100% {
+    border-color: rgb(50, 55, 205);
+    transform: translateY(0);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+
+.animate-superman {
+  animation: superman 5s infinite;
+}
