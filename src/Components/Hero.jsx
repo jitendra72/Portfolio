@@ -30,14 +30,33 @@ const Hero = () => {
           JITENDRA
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="text-gray-400 text-xl mt-6"
-        >
-          Frontend Developer • React Developer • UI Designer
-        </motion.p>
+        {/* 3D Flip Animation Text */}
+        <div className="relative h-14 mt-6 overflow-hidden flex justify-center items-center">
+          
+          <motion.div
+            animate={{
+              y: [0, -60, -120],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="text-xl md:text-2xl font-semibold text-red-400"
+          >
+            <div className="h-[60px] flex items-center justify-center">
+              Frontend Developer
+            </div>
+
+            <div className="h-[60px] flex items-center justify-center">
+              React Developer
+            </div>
+
+            <div className="h-[60px] flex items-center justify-center">
+              UI Designer
+            </div>
+          </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 80 }}
