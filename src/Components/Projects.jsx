@@ -11,35 +11,38 @@ const Projects = () => {
       id: 1,
       title: "MechShop",
       image: hero,
-      description: "Modern HTML project with responsive layout.",
+      description:
+        "Modern e-commerce website with stylish products and responsive shopping UI.",
       link: "https://mech-shop-tawny.vercel.app/",
     },
     {
       id: 2,
       title: "Swiggy Clone",
       image: swiggy,
-      description: "Creative CSS animations and styling project.",
+      description:
+        "Modern Swiggy clone with responsive food ordering and restaurant UI.",
       link: "https://swigy-clone-gamma.vercel.app/",
     },
     {
       id: 3,
       title: "World Atlas",
       image: world,
-      description: "Interactive JavaScript web application.",
+      description:
+        "Interactive World Atlas with country details, maps, flags, and geography information.",
       link: "https://world-atlas-beryl-theta.vercel.app/",
     },
     {
       id: 4,
       title: "Foody Zone",
       image: bgimg,
-      description: "React based responsive frontend project.",
+      description: "Modern Food Delivery Website built with React.js",
       link: "https://foody-zone-sigma.vercel.app/",
     },
     {
       id: 5,
       title: "BigRock",
       image: bigrock,
-      description: "Tailwind CSS modern UI design project.",
+      description: "Discription is Pending.",
       link: "#",
     },
   ];
